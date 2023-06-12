@@ -1,0 +1,6 @@
+.section-title {
+  margin-bottom: 25px;
+  @include fluid-font-size(28px, 32px, 575px, 1299px);
+  font-weight: bold;
+  line-height: 1.25;
+}

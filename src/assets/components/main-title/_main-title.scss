@@ -1,0 +1,5 @@
+.main-title {
+  @include fluid-font-size(32px, 48px, 575px, 1299px);
+  font-weight: bold;
+  line-height: 1.17;
+}

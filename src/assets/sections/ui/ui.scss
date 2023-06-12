@@ -1,0 +1,21 @@
+.ui {
+
+  &__subsection {
+    margin-bottom: 60px;
+  }
+
+  &__text-common {
+    margin-bottom: 48px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

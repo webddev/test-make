@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Прекрасная страничка</title>
+</head>
+<body>
+<div class="app">
+
+   <div class="container">
+
+      <header class="header">
+         <div class="header__left">
+            <img src="assets/img/logo.png" class="header__logo" alt="Логотип Мейк"/>
+            <div class="header__name">
+               <b>Федорова</b>
+               Полина Евгеньевна
+            </div>
+         </div>
+         <div class="header__right">
+            <div class="header__menu"></div>
+         </div>
+      </header>
+
+      <div class="info-menu">
+         <svg
+           width="20"
+           height="20"
+           class="info-menu__icon-close"
+           viewBox="0 0 20 20"
+           fill="none"
+           xmlns="http://www.w3.org/2000/svg"
+         >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.4142 10L19.1924 2.22184L17.7782 0.807624L10 8.5858L2.22183 0.807624L0.807612 2.22184L8.58579 10L0.807612 17.7782L2.22183 19.1924L10 11.4142L17.7782 19.1924L19.1924 17.7782L11.4142 10Z"
+              fill="white"
+            />
+         </svg>
+         <div class="info-menu__description description">
+            <div class="description__row">
+               <img
+                 src="assets/img/logo.png"
+                 width="50"
+                 height="50"
+                 class="info-menu__icon"
+               />
+               <p class="description__title mini-title">Задание выполнила</p>
+            </div>
+            <div class="description__contacts contacts">
+               <h2 class="description__title title">
+                  Федорова <br/>
+                  Полина Евгеньевна
+               </h2>
+               <p class="description__text text">
+                  Самостоятельно и с помощью курсов изучаю веб-разработку.
+               </p>
+               <a href="tel:+79964151763" class="number">+7 (996) 415-17-63</a>
+               <div class="contacts__footer">
+                  <div class="contacts__row">
+                     <a href="" class="contacts__icon">
+                        <img src="assets/img/icons/link-icon.png"/>
+                     </a>
+                     <a href="" class="contacts__message">Написать в Telegram</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <main>
+         <div class="grid-aside">
+            <div class="menu">
+               <ul class="menu__list">
+                  <li class="menu__link" data-nav="introduction">Напутственное слово</li>
+                  <li class="menu__link" data-nav="layout">Сетка</li>
+                  <li class="menu__link" data-nav="typography">Типографика</li>
+                  <li class="menu__link" data-nav="ui">UI</li>
+               </ul>
+            </div>
+            <div class="app__content">
+               <div class="main-page">
+                  <section id="introduction" class="main-page__introduction">
+                     <h1 class="main-title introduction__title">Тестовое задание</h1>
+                     <p class="lead introduction__lead">Уровень: junior</p>
+                     <p class="text-common introduction__text-common">Привет! Твоё тестовое задание — грамотно
+                        заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В
+                        менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?</p>
+                  </section>
+                  <section id="layout" class="section-layout main-page__section-layout">
+                     <h2 class="section-title layout__section-title">Сетка</h2>
+                     <p class="text-common section-layout__text-common">Задание предполагает адаптивную вёрстку.
+                        Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.</p>
+
+                     <div class="section-layout__layout-block layout-block">
+                        <h3 class="subtitle layout-block__subtitle">Десктоп (1200+)</h3>
+                        <div class="layout-block__row">
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Контент</div>
+                              <div class="lead layout-block__lead">1072–1312</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Колонок</div>
+                              <div class="lead layout-block__lead">12</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Ширина колонки</div>
+                              <div class="lead layout-block__lead">60-80</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Межколонник</div>
+                              <div class="lead layout-block__lead">32</div>
+                           </div>
+                        </div>
+                        <img src="assets/img/devices/pic_desctop.png" class="layout-block__img"
+                             alt="Desktop-columns image">
+                     </div>
+                     <div class="section-layout__layout-block layout-block">
+                        <h3 class="subtitle layout-block__subtitle">Планшет (736+)</h3>
+                        <div class="layout-block__row">
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Контент</div>
+                              <div class="lead layout-block__lead">672–928</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Колонок</div>
+                              <div class="lead layout-block__lead">8</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Ширина колонки</div>
+                              <div class="lead layout-block__lead">56-88</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Межколонник</div>
+                              <div class="lead layout-block__lead">32</div>
+                           </div>
+                        </div>
+                        <img src="assets/img/devices/pic_tab.png" class="layout-block__img" alt="Tablet-columns image">
+                     </div>
+                     <div class="section-layout__layout-block layout-block">
+                        <h3 class="subtitle layout-block__subtitle">Телефон (320+)</h3>
+                        <div class="layout-block__row">
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Контент</div>
+                              <div class="lead layout-block__lead">296–424</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Колонок</div>
+                              <div class="lead layout-block__lead">4</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Ширина колонки</div>
+                              <div class="lead layout-block__lead">56-88</div>
+                           </div>
+                           <div class="layout-block__row-item">
+                              <div class="help-text layout-block__help-text">Межколонник</div>
+                              <div class="lead layout-block__lead">24</div>
+                           </div>
+                        </div>
+                        <img src="assets/img/devices/pic_tab.png" class="layout-block__img" alt="Tablet-columns image">
+                     </div>
+                  </section>
+                  <section id="typography" class="typography main-page__typography">
+                     <h2 class="section-title typography__section-title">Типографика</h2>
+                     <p class="text-common typography__text-common">Используется шрифт Graphik. На телефонах стили
+                        типографики переопределяются</p>
+                     <div class="typography__toggler-block toggler-block">
+                        <div class="toggler-block__top">
+                           <div class="toggler-block__toggler toggler-block__toggler_active" data-toggle="desk">
+                              Десктоп
+                           </div>
+                           <div class="toggler-block__toggler" data-toggle="mob">Телефон</div>
+                        </div>
+                        <div class="toggler-block__container">
+                           <div class="toggler-block__body toggler-block__body_active" data-toggle="desk">
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H1, 48/56, bold</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="main-title">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H2, 32/40, bold</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="section-title">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H3, 24/32, medium</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="subtitle">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H4, 18/28, medium</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="small-title">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Лид P_Lead, 24/32, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="lead">Текст лида</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Крупный текст P_18, 18/28, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="large-text">Крупный текст</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Основной текст P_16, 16/24, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="text-common">Основной текст</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Впомогательный текст P_14, 14/20, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="help-text color-black">Впомогательный текст</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="toggler-block__body" data-toggle="mob">
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H1, 32/40, bold</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="main-title">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H2, 28/36, bold</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="section-title">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H3, 20/28, medium</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="subtitle">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Заголовок H4, 18/28, medium</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="small-title">Текст заголовка</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Лид P_Lead, 20/28, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="lead">Текст лида</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Крупный текст P_18, 18/28, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="large-text">Крупный текст</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Основной текст P_16, 16/24, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="text-common">Основной текст</div>
+                                 </div>
+                              </div>
+                              <div class="toggler-block__row">
+                                 <div class="toggler-block__col toggler-block__col_first">
+                                    <p class="help-text">Впомогательный текст P_14, 14/20, regular</p>
+                                 </div>
+                                 <div class="toggler-block__col toggler-block__col_second">
+                                    <div class="help-text color-black">Впомогательный текст</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <section id="ui" class="ui main-page__ui">
+                     <h2 class="section-title">UI</h2>
+                     <div class="ui__subsection">
+                        <h3 class="subtitle">Текстовое поле</h3>
+                        <div class="input-field">
+                           <div class="input-field__error-title">E-mail</div>
+                           <input class="input-field__input" type="email" placeholder="E-mail">
+                           <div class="input-field__error-text">Текст ошибки</div>
+                        </div>
+                     </div>
+                     <div class="ui__subsection">
+                        <h3 class="subtitle">Выпадающий список</h3>
+                        <p class="text-common ui__text-common">Компонент состоит из текстового поля и выпадающей
+                           подсказки</p>
+                        <div class="select" data-state="">
+                           <div class="select__title" data-default="Option 0">
+                              Выберите что-нибудь
+                           </div>
+                           <div class="select__content">
+                              <input
+                                id="singleSelect0"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                                checked
+                              />
+                              <label for="singleSelect0" class="select__label">Выберите что-нибудь</label>
+                              <input
+                                id="singleSelect1"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                              />
+                              <label for="singleSelect1" class="select__label">Первый стул</label>
+                              <input
+                                id="singleSelect2"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                              />
+                              <label for="singleSelect2" class="select__label">Второй стул</label>
+                              <input
+                                id="singleSelect3"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                              />
+                              <label for="singleSelect3" class="select__label">Выбранный пункт</label>
+                              <input
+                                id="singleSelect4"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                              />
+                              <label for="singleSelect4" class="select__label">Теорема Эскобара</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ui__subsection">
+                        <h3 class="subtitle">Кнопка</h3>
+                        <button class="button">Отправить</button>
+                     </div>
+                     <div class="ui__subsection">
+                        <h3 class="subtitle">Чекбокс, радиобаттон</h3>
+                        <div class="ui__row">
+                           <div class="ui__col">
+                              <input type="checkbox" class="custom-checkbox" id="val1" name="checkbox1" value="val1">
+                              <label for="val1">Выбери меня</label>
+                           </div>
+                           <div class="ui__col">
+                              <input type="radio" class="custom-radio" id="val2" name="radio1" value="val1">
+                              <label for="val2">Пластмассовый мир победил</label>
+                              <input type="radio" class="custom-radio" id="val3" name="radio1" value="val2">
+                              <label for="val3">Макет оказался сильней</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ui__subsection">
+                        <h3 class="subtitle">Аккордеон</h3>
+                        <div class="accordeon">
+                           <p class="accordeon__title text">Аккордеон</p>
+                           <div
+                             class="accordeon__item"
+                             style="height: 0px; opacity: 0; padding: 0px"
+                           >
+                              Гоpдость полными вагонами золотыми погонами <br/>
+                              С юга дyют молодые вет…<br/>
+                              Pазpывая в клочья облака не забыли шлют из далека<br/>
+                              С дома мама И не последняя любовь<br/>
+                              А по небy бегyт видишь чьи-то следы<br/>
+                              Это может быть ты это может быть я<br/>
+                              Это может наш дрyг<br/>
+                              Это может нам поют свои
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </main>
+
+   </div>
+</div>
+</body>
+</html>

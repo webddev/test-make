@@ -1,0 +1,53 @@
+.accordeon {
+  &__title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    border-bottom: 1px solid $grey;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      color: $black;
+      border-bottom: 1px solid $text-hover;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      right: 6px;
+      display: block;
+      width: 10px;
+      height: 2px;
+      transition: all 0.3s ease-out;
+      background-color: $text-hover;
+      transform: translate(-3px, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(3px, -50%) rotate(-45deg);
+    }
+    &_active {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        right: 6px;
+        display: block;
+        width: 10px;
+        height: 2px;
+        transition: all 0.3s ease-out;
+        background-color: $text-hover;
+        transform: translate(-3px, -50%) rotate(130deg);
+      }
+      &::after {
+        transform: translate(3px, -50%) rotate(50deg);
+      }
+    }
+  }
+
+  &__item {
+    border-bottom: 2px solid $text-hover;
+    transition: ease-in-out 0.5s;
+  }
+}

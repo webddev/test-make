@@ -1,0 +1,5 @@
+.lead {
+  @include fluid-font-size(20px, 24px, 575px, 1299px);
+  font-weight: 400;
+  line-height: 1.33;
+}

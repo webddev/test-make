@@ -1,0 +1,5 @@
+@import 'mixins/fonts';
+
+@include font-face('GraphikLCG', '../fonts/GraphikLCG-Regular', swap, 400, normal);
+@include font-face('GraphikLCG', '../fonts/GraphikLCG-Medium', swap, 500, normal);
+@include font-face('GraphikLCG', '../fonts/GraphikLCG-Bold', swap, 700, normal);

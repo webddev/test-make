@@ -1,0 +1,38 @@
+.menu {
+
+  &__list {
+    position: fixed;
+    top: 216px;
+    list-style-type: none;
+
+    @media (max-width: 992.98px) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    transition: ease-out 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-hover;
+      transition: ease-out 0.2s;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @media (max-width: 992.98px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &_active {
+      color: $text-hover;
+    }
+  }
+}

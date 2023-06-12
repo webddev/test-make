@@ -1,0 +1,36 @@
+.layout-block {
+
+  &__subtitle {
+
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  &__row-item {
+
+  }
+  &__help-text {
+    margin-bottom: 8px;
+    color: $grey;
+  }
+  &__lead {
+
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 50px;
+
+    @media (max-width: 575.98px) {
+      margin-top: 30px;
+    }
+  }
+}
